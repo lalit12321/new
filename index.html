@@ -42,7 +42,7 @@
 // const socket = io(SERVER_URL, {
 //   path: "/my-custom-path/"
 // });
-        const socket = io();
+        const socket = io("/socket.io/");
       
 
       socket.on('connect', () => {
