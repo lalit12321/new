@@ -5,7 +5,9 @@ const path = require('path');
 
 const app = express();
 const server = createServer(app);
-const io = new Server(server);
+const io = new Server({
+  path: "/socket.io/"
+});
 
 // Serve the index.html file
 app.get('/', (req, res) => {
