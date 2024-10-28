@@ -37,11 +37,12 @@
 <!--     <script  type="application/javascipt" src="/socket.io/socket.io.js"></script> -->
     <script  src="https://cdn.socket.io/4.8.0/socket.io.min.js"></script>
     <script>
-        import { io } from "socket.io-client";
+//         import { io } from "socket.io-client";
 
-const socket = io(SERVER_URL, {
-  path: "/my-custom-path/"
-});
+// const socket = io(SERVER_URL, {
+//   path: "/my-custom-path/"
+// });
+        const socket = io();
       
 
       socket.on('connect', () => {
